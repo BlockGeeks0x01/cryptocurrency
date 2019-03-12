@@ -1,9 +1,9 @@
-## Cryptocurrency Tool
+## Cryptocurrency Tools
 
 ### Binance client
 Sometimes I want to known the percentage of my cryto-currency in Binance account, but unfortunately there is not such tools.So I do it with the api of Binance.
 
-#### config
+#### Config
 * create file `.env` in the project root directory,for example:
 ```$txt
 https_proxy="socks5://127.0.0.1:2333"
@@ -13,14 +13,14 @@ binance_apiSecretKey = "NhqPtmdSJYdKjVHjA7PZj4Mge3R5YNiP1e3UZjInClVN65XAbvqqM6A7
 ```
 `https_proxy` and `http_proxy` are used for network proxy settings,all of them are not required,you can set in the system environment.
 
-#### build
+#### Installation
 ```$shell
 cd cmd/binance
 go build
 ./binance
 ```
 
-#### use it
+#### Usage
 ```$shell
 please input any command: help
 commands: ping, server time, account info, signed test, quit
@@ -58,9 +58,5 @@ CHAT: 0.789040, 0.000002 BTC, 0.01 $, 0.000%
 please input any command: 
 ```
 
-#### Continue
-```$go
-for {
-    build more useful tools
-}
-```
+#### Who?
+This is written by Eric Sun, please feel free to contact me via ericsgy@163.com. 
